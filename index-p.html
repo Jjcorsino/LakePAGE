@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallaxv</title>
+    <link rel="icon" href="images/isologo.jpg">
+    <link rel="stylesheet" href="para.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo"><img src="images/lakepng.png"></a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h2 id="text"><span>Lake Analytics</span></h2>
+        
+        <img src="parallax/lago3.jpeg" id="agua">
+        
+        <img src="parallax/cloud1.png" id="nube1">
+        <img src="parallax/cloud2.png" id="nube2">
+        <img src="parallax/cloud3.png" id="nube3">
+
+
+
+    </section>
+    <div class="sec">
+        <h2>¿Quienes somos?</h2>
+        <p>Lake Analytics es la primer empresa patagonica en ofrecer a sus clientes servicios de Business Intelligence (Inteligencia de Negocios) y Data Analysis (Analisis de Datos), aportando un valor agregado con gran calidad y velocidad para la toma de decisiones. 
+
+            Colaboramos con nuestros clientes desarrollando Aplicaciones Mobile, Bases de Datos y Tableros Dinamicos de Control a traves de herramientas de Microsoft como Power Apps, Power Automate, Sharepoint y Power Bi.
+            
+            Transpormamos digitalmente a nuestros clientes mediante nuestras soluciones tecnologicas con el foco en la reducción de costos operativos, logisticos y administrativos.
+        </p>
+        <img src="parallax/cloud2.png" id="nube4">
+
+    </div>
+    <div class="clients">
+
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let nube1 = document.getElementById('nube1');
+        let nube2 = document.getElementById('nube2');
+        let nube3 = document.getElementById('nube3');
+        let nube4 = document.getElementById('nube4');
+
+        
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 40 + value * -0.1 + '%';
+            nube2.style.left =  value * 0.5 + 'px';
+            nube1.style.left =  value * -0.4 + 'px';
+            nube3.style.top = value * 0.4 + 'px';
+            nube4.style.left =  value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
