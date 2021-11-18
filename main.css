@@ -31,7 +31,7 @@ html {
 
 #header ul li{
   list-style: none;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 #header ul li a{
@@ -41,6 +41,7 @@ html {
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1rem;
   
 }
 #header ul li a:hover, 
@@ -85,7 +86,7 @@ img{
   padding-top: 20vh;
   padding-bottom: 20vh;
 
-  background-color: #00000050;
+  background-color: hsla(0, 0%, 0%, 0.603);
 }
 
 .contenedor-titulo {
@@ -385,7 +386,7 @@ img{
 }
 
 .Contacto {
-  height: 40vh;
+  height: auto;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,4 +489,34 @@ form {
 
 input {
   height: 45px;
+}
+
+@media screen and (max-width: 800px){
+
+  .logo img{
+    height: 5vh;
+  }
+  #header ul li a{
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px){
+
+  #header{
+    height: 5vh;
+  }
+  #header ul li{
+    margin-left: 0.4rem;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  #header ul li{
+    margin-left: 0.2rem;
+  }
+  #header ul li a{
+    padding: 6px 2px;
+  }
 }
