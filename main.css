@@ -121,10 +121,10 @@ img{
 
 }
 hr.rounded {
-  border-top: 6px solid #fff;
+  border-top: 1px solid #fff;
   border-radius: 5px;
-  width: 15%;
-  margin-left: 85%;
+  width: 35%;
+  margin-left: 65%;
 }
 
 .Servicios {
