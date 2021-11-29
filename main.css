@@ -3,6 +3,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  min-width: 765px;
+  min-height: 100vh;
+
 }
 
 html {
