@@ -75,7 +75,7 @@ img{
 
 }
 
-#video{
+.video{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -243,7 +243,7 @@ hr.rounded {
 }
 
 .container {
-  width: 75%;
+  width: 60%;
   margin: auto;
   position: relative;
   display: -webkit-box;
@@ -253,7 +253,7 @@ hr.rounded {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-evenly;
 }
 
 .container .card {
@@ -508,17 +508,23 @@ input {
   height: 45px;
 }
 
-@media screen and (max-width: 835px){
+@media screen and (max-width: 1150px){
 
-  .logo img{
-    height: 5vh;
-  }
+  
   #header ul li a{
     font-size: 0.9rem;
   }
   .texto-nosotros{
     width: auto;
   }
+ 
+
+}
+@media screen and (max-width: 780px){
+  .video{
+    display: none;
+  }
+  
 }
 @media screen and (max-width: 680px){
   #header ul li a{
@@ -531,9 +537,7 @@ input {
   #header{
     height: 5vh;
   }
-  #header ul li a{
-    font-size: 0.5rem;
-  }
+ 
   #header ul li{
     margin-left: 0.4rem;
   }
