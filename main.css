@@ -133,9 +133,8 @@ hr.rounded {
 .Servicios {
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   margin-top: 8vh;
 }
 
@@ -243,22 +242,13 @@ hr.rounded {
 }
 
 .container {
-  width: 60%;
+  width: 80%;
   margin: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.container .card {
-  position: relative;
-}
+
 
 .container .card .face {
   width: 300px;
@@ -270,15 +260,9 @@ hr.rounded {
 .container .card .face.face1 {
   position: relative;
   background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 3;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
@@ -516,6 +500,10 @@ input {
   }
   .texto-nosotros{
     width: auto;
+  }
+
+  .container{
+    grid-template-columns: repeat(2, 1fr);
   }
  
 
