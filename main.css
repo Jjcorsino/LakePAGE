@@ -584,6 +584,9 @@ input {
   .header ul li a {
     font-size: 0.6rem;
   }
+  .Contacto {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 595px) {
@@ -593,6 +596,9 @@ input {
 
   .header ul li {
     margin-left: 0.4rem;
+  }
+  .contenedor-texto{
+    width: 80%;
   }
 }
 
@@ -608,8 +614,6 @@ input {
     margin: auto;
     margin-top: 50%;
   }
-  .Contacto {
-    height: auto;
-  }
+  
 }
 
