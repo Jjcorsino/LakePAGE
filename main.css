@@ -496,6 +496,12 @@ hr.rounded {
   display: inline-block;
 }
 
+.botones a:hover {
+  color: #2d2f82;
+  background: #fffffb;
+  border: 1px solid #2d2f82;
+}
+
 .botones img {
   display: inline-block;
   height: 25px;
